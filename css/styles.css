@@ -9,6 +9,9 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-text-color: #2196f3;
+    --accent-hero-btn: #188ce8;
+
+    --border-color: #eeeeee;
 }
 
 body {
@@ -17,7 +20,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    background-color: var(--primary-background);
+    background-color: var(--white-color);
     color: var(--primary-text-color);
 }
 
@@ -27,10 +30,6 @@ body {
 
 a {
     text-decoration: none;
-}
-
-.header {
-    background-color: var(--white-color);
 }
 
 .logo {
@@ -103,10 +102,15 @@ footer {
     text-transform: uppercase;
 }
 
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+}
+
 .hero-btn {
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.81;
+    line-height: 1.88;
 
     display: flex;
     align-items: center;
@@ -119,7 +123,7 @@ footer {
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #188ce8;
+    background-color: var(--accent-hero-btn);
 }
 
 .section-title {
@@ -153,7 +157,7 @@ footer {
 
 .teammates > li {
     background-color: var(--white-color);
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--border-color);
 }
 
 .teammates .section-subtitle {
@@ -171,10 +175,6 @@ footer {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-}
-
-.section {
-    background-color: var(--primary-background);
 }
 
 .filter-btn {
