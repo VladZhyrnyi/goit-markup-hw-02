@@ -21,12 +21,12 @@
     margin: -1px;
     border: 0;
     padding: 0;
-    
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -44,6 +44,8 @@ body {
 a {
     text-decoration: none;
 }
+
+/* ------------------------- Header ----------------------- */
 
 .logo {
     font-family: "Raleway";
@@ -88,25 +90,28 @@ a {
     color: var(--accent-text-color);
 }
 
+/* ------------------------- Footer ----------------------- */
+
 .footer {
-    letter-spacing: 0.03em;
-
     background-color: var(--footer-background);
-}
-
-.footer .contact-link {
-    line-height: 1.71;
 }
 
 .address {
     font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
     color: var(--white-color);
 }
 
-.transparent {
+.footer-contact-link {
+    font-size: 14px;
+    line-height: 1.71;
+
     color: var(--white-transparent);
 }
+
+/* ------------------------- Hero section ----------------------- */
 
 .hero {
     background-color: var(--footer-background);
@@ -122,11 +127,6 @@ a {
     text-transform: uppercase;
 
     color: var(--white-color);
-}
-
-.btn {
-    font-family: inherit;
-    cursor: pointer;
 }
 
 .hero-btn {
@@ -147,6 +147,15 @@ a {
     background-color: var(--accent-hero-btn);
 }
 
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+/* ------------------------- Features WhatWeDo sections ----------------------- */
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -165,10 +174,12 @@ a {
     color: var(--title-text-color);
 }
 
-.feature-text {
+.section-text {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
+/* ------------------------- AboutUs section ----------------------- */
 
 .team-section {
     background-color: var(--section-background);
@@ -195,6 +206,8 @@ a {
     letter-spacing: 0.03em;
 }
 
+/* ------------------------- Portfolio section ----------------------- */
+
 .filter-btn {
     font-weight: 500;
     font-size: 16px;
@@ -214,7 +227,6 @@ a {
 .portfolio-item {
     background-color: var(--white-color);
     color: var(--primary-text-color);
-    border: 1px solid var(--border-color);
 }
 
 .portfolio-item > a {
